@@ -1,6 +1,9 @@
 # S&E Lab Onboarding course
 
-Onboarding course for new members of the ELTE Stress and Emotions Lab, built with [Quarto](https://quarto.org/) and [Quarto Live](https://r-wasm.github.io/quarto-live/). It replaces the onboarding slide deck.
+Onboarding course for new members of the ELTE Stress and Emotions Lab, built with [Quarto](https://quarto.org/) and [Quarto Live](https://r-wasm.github.io/quarto-live/).
+
+- **Course site:** <https://nthun.github.io/elte-se-lab-onboarding/>
+- **Original slide deck** (the course's source, lab members only): [Onboarding slide deck – Stress and Emotions lab](https://docs.google.com/presentation/d/1S_NBHGPXC1FEa-DpTeM41DyW_IjRz2QM3kzvfi3lt7c/edit)
 
 ## Structure
 

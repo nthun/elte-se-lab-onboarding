@@ -6,6 +6,8 @@ toc: true
 
 ## What this course is
 
+![](assets/img/welcome.jpg){.side-meme fig-alt="Twitter profile of Tamás Nagy with the banner text Greetings to you"}
+
 This course replaces our old onboarding slide deck. It tells you what to expect when you work with us, which tools and skills you need, and how we collaborate. Instead of just reading, you will **do** things along the way: set up your accounts, practice the rules on realistic situations, and check your understanding with short quizzes.
 
 The course is in constant development. If something is outdated, unclear or broken, tell us on Slack. That is a useful contribution, not a complaint.

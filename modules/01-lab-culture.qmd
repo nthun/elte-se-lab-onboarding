@@ -7,6 +7,8 @@ subtitle: "Who we are, and how we work together"
 <span>⏱ ~45 minutes</span><span>Track: everyone [BA]{.ba-tag}</span><span>Checkpoint: [Module 1 quiz]({{< var forms.m1 >}})</span>
 :::
 
+![](../assets/img/m1-lab-culture.jpg){.module-hero fig-alt="Guests in white tie raising glasses at a formal state banquet"}
+
 ## Why this matters
 
 Most problems in a research group are not about statistics. They are about missed deadlines nobody mentioned, decisions lost in a chat thread, or someone stuck for two weeks without asking for help. This module covers the habits that prevent those problems.

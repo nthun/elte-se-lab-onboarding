@@ -1,5 +1,4 @@
 # Edit links here once; every module picks them up via {{< var ... >}}.
-# Replace each REPLACE-ME with the "Send > link" URL of the matching Google Form (quiz mode).
 forms:
   m1: "https://forms.gle/MM6LwstfyQfJyyc28"
   m2: "https://forms.gle/VEHCRBM2LEX4w67M8"

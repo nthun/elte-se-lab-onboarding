@@ -19,6 +19,8 @@ website:
         aria-label: Lab Slack
   sidebar:
     style: docked
+    logo: assets/img/elte-ppk-logo.png
+    logo-alt: "ELTE PPK"
     contents:
       - index.qmd
       - section: "Modules"

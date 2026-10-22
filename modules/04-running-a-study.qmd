@@ -7,6 +7,8 @@ subtitle: "From idea to archived project, and how to behave in the lab"
 <span>⏱ ~1 hour</span><span>Track: everyone [BA]{.ba-tag}</span><span>Checkpoint: [Module 4 quiz]({{< var forms.m4 >}})</span>
 :::
 
+![](../assets/img/m4-running-a-study.jpg){.module-hero fig-alt="Two people in protective suits and gas masks working in a makeshift laboratory"}
+
 ## Why this matters
 
 A study is a long chain of steps, and every step leaves documents behind. If those documents are complete and in the right place, anyone can pick up the project, reviewers can check our work, and we can reuse the materials years later.

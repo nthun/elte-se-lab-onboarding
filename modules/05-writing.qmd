@@ -7,11 +7,15 @@ subtitle: "Manuscripts, formatting, references, AI and version control"
 <span>⏱ ~1.5 hours, plus an online course</span><span>Track: everyone [BA]{.ba-tag}</span><span>Checkpoint: [Module 5 quiz]({{< var forms.m5 >}})</span>
 :::
 
+![](../assets/img/m5-writing.jpg){.module-hero fig-alt="A playwright in Elizabethan costume writing with a quill at a candlelit table"}
+
 ## Why this matters
 
 Writing is the main product of research. Academic writing has many rules, but the good news is that they can be learned. Consistent tools and formatting also mean that several people can work on the same manuscript without breaking it.
 
 ## Learning to write
+
+![](../assets/img/m5-therefore-thus.jpg){.side-meme fig-alt="Reaction meme: a man looking increasingly excited at the connectives Therefore, Accordingly, Thus, Hence and Ergo"}
 
 Unfortunately, ELTE PPK doesn't offer an academic writing course, but there are great free online courses. I recommend [Writing in the Sciences (Coursera)](https://www.coursera.org/learn/sciwrite). Do yourself a favor and complete it.
 

@@ -7,6 +7,8 @@ subtitle: "The accounts and tools you need before you start"
 <span>⏱ ~1.5 hours</span><span>Track: everyone [BA]{.ba-tag}</span><span>Checkpoint: [Module 2 quiz]({{< var forms.m2 >}})</span>
 :::
 
+![](../assets/img/m2-tools.jpg){.module-hero fig-alt="Two grinning men holding chainsaws"}
+
 ## Why this matters
 
 A shared set of tools means anyone in the lab can find, open and continue anyone else's work. This module is mostly hands-on: by the end, your accounts are set up and connected. All of these tools have excellent tutorials; if you don't know one, follow the link, create an account and watch the intro video.

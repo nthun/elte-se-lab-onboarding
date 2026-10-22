@@ -7,6 +7,8 @@ subtitle: "Authorship, citation ethics and responding to reviewers"
 <span>⏱ ~30 minutes</span><span>Track: everyone working toward a publication (optional for BA)</span><span>Checkpoint: [Module 7 quiz]({{< var forms.m7 >}})</span>
 :::
 
+![](../assets/img/m7-publishing.jpg){.module-hero fig-alt="A scientist receiving an award at a formal prize ceremony"}
+
 ## Why this matters
 
 Authorship is how credit and responsibility are shared in science. Clear rules, agreed early, prevent the most painful conflicts a research team can have.

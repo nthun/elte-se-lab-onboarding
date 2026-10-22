@@ -20,6 +20,8 @@ webr:
 <span>⏱ ~2 hours</span><span>Track: data sections [BA]{.ba-tag}; R sections for everyone who analyzes data</span><span>Checkpoint: [Module 6 quiz]({{< var forms.m6 >}})</span>
 :::
 
+![](../assets/img/m6-data-and-r.jpg){.module-hero fig-alt="A man in big glasses at a 1980s home computer"}
+
 ## Why this matters
 
 Datasets outlive the people who create them. A clean, well-named, anonymized dataset can be reused, shared on OSF and understood by the next student. A messy one becomes a liability. The code exercises on this page run in your browser: there is nothing to install. The first time, R takes a few seconds to load.

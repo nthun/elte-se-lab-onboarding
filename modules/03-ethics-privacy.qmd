@@ -7,6 +7,8 @@ subtitle: "Protecting participants, data and the lab"
 <span>⏱ ~45 minutes</span><span>Track: everyone [BA]{.ba-tag}</span><span>Checkpoint: [Module 3 quiz]({{< var forms.m3 >}})</span>
 :::
 
+![](../assets/img/m3-ethics-privacy.jpg){.module-hero fig-alt="Three tough-looking bouncers guarding a door"}
+
 ## Why this matters
 
 Participants trust us with their time, their bodies and their personal data. A single careless email or shared spreadsheet can break that trust, harm a participant, and put the whole lab's research permission at risk. These rules follow EU and Hungarian law (including the GDPR), and they apply to everyone, including students.
