@@ -6,6 +6,8 @@ website:
   title: "S&E Lab Onboarding"
   description: "Onboarding course for new members of the ELTE Stress and Emotions Lab"
   page-navigation: true
+  repo-url: https://github.com/nthun/elte-se-lab-onboarding
+  repo-actions: [edit, issue]
   search: true
   navbar:
     left:

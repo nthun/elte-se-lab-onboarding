@@ -65,3 +65,11 @@
   opacity: 0.8;
   font-style: italic;
 }
+
+/* Inline code inside quiz options: readable in light and dark mode */
+.quiz-option code {
+  color: inherit;
+  background: rgba(127, 127, 127, 0.18);
+  padding: 0.05em 0.35em;
+  border-radius: 0.25rem;
+}

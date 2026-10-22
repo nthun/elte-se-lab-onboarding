@@ -4,7 +4,7 @@ subtitle: "Protecting participants, data and the lab"
 ---
 
 ::: module-meta
-<span>⏱ ~45 minutes</span><span>Track: everyone [BA]{.ba-tag}</span><span>Checkpoint: [Module 3 quiz]({{< var forms.m3 >}})</span>
+<span>⏱ ~15 minutes</span><span>Track: everyone [BA]{.ba-tag}</span><span>Checkpoint: [Module 3 quiz]({{< var forms.m3 >}})</span>
 :::
 
 ![](../assets/img/m3-ethics-privacy.jpg){.module-hero fig-alt="Three tough-looking bouncers guarding a door"}
@@ -23,16 +23,17 @@ Participants trust us with their time, their bodies and their personal data. A s
 
 - **Never log in** to your own or the lab's account on someone else's computer. It can compromise passwords and makes the event history hard to keep tidy.
 - Use accounts with your own identity, for example your own Google account.
-- Documents are shared on Google Drive or OSF with each project participant individually. That way, we have an accurate log of who did what.
+- Documents are shared on Google Drive with each project participant individually. That way, we have an accurate log of who did what.
 - Permissions are removed when you leave a project.
 - If you really have no choice but to log in on a computer that isn't yours, use an incognito window (Ctrl+Shift+N in Chrome) and log out afterwards.
 
 ## File sharing and ownership [BA]{.ba-tag}
 
-- Project files are kept in Google Drive and OSF.
-- **As soon as data collection starts**, the ownership of key project files and folders must be transferred to the lab account ({{< var links.lab_email >}}).
-- The reason: these files are often needed years later, and the lab must keep access even after students leave the lab or the university.
-- Key project participants keep access as long as needed. Those who leave the project lose access.
+- Project files are kept in Google Drive.
+- **Every project file and folder is owned by the lab account** ({{< var links.lab_email >}}) from the start of the project. Create new files inside the project's folder, then transfer ownership to the lab account right away (Share → the lab account → Transfer ownership).
+- Google does not do this automatically: a file you create stays yours even inside a lab-owned folder, so the transfer step is on you.
+- The reason: project files are often needed years later, and the lab must keep access even after students leave the lab or the university.
+- Project members keep access as long as they need it. Those who leave the project lose access.
 
 ## Data security and privacy [BA]{.ba-tag}
 
@@ -66,14 +67,14 @@ Private participant information must not be shared with anyone, not even within 
 :::
 
 ::: quiz
-Data collection for your study starts next week. What has to happen with the project's Google Drive folder?
+You create a new Google Doc for the study protocol inside the project folder. What else do you need to do?
 
-- [ ] Nothing, as long as you remain the owner.
-- [x] Ownership of the key files and folders is transferred to the lab's account.
-- [ ] It should be downloaded and stored on a USB drive as a backup.
+- [ ] Nothing; files in a lab-owned folder belong to the lab automatically.
+- [x] Transfer ownership of the document to the lab account.
+- [ ] Download it as a backup.
 
 ::: explain
-From the start of data collection, the lab account must own key project files, so the lab never loses access when people leave.
+Project files are owned by the lab account by default. Google keeps you as the owner of files you create, even inside a lab-owned folder, so you transfer ownership yourself.
 :::
 :::
 
@@ -82,7 +83,7 @@ Which of these are acceptable? Select every acceptable option.
 
 - [x] Sharing a project document with a co-author via their own Google account.
 - [ ] Logging into the lab's Google account on a friend's laptop to grab a file.
-- [x] Publishing a dataset on OSF after it has been fully anonymized.
+- [x] Publishing a dataset in a public repository after it has been fully anonymized.
 - [ ] Using participants' email addresses as the ID column so it's easy to match records.
 
 ::: explain

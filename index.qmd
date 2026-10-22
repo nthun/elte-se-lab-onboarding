@@ -6,8 +6,6 @@ toc: true
 
 ## What this course is
 
-![](assets/img/welcome.jpg){.side-meme fig-alt="Twitter profile of Tamás Nagy with the banner text Greetings to you"}
-
 This course replaces our old onboarding slide deck. It tells you what to expect when you work with us, which tools and skills you need, and how we collaborate. Instead of just reading, you will **do** things along the way: set up your accounts, practice the rules on realistic situations, and check your understanding with short quizzes.
 
 The course is in constant development. If something is outdated, unclear or broken, tell us on Slack. That is a useful contribution, not a complaint.
@@ -33,19 +31,21 @@ If you are a **BA student doing fieldwork**, the sections marked [BA]{.ba-tag} a
 
 | Module | Topic | Time | BA track |
 |---|---|---|---|
-| 1 | [Lab culture](modules/01-lab-culture.qmd) | ~45 min | Required |
-| 2 | [Tools setup](modules/02-tools-setup.qmd) | ~1.5 h | Required |
-| 3 | [Ethics, privacy and data security](modules/03-ethics-privacy.qmd) | ~45 min | Required |
-| 4 | [Running a study](modules/04-running-a-study.qmd) | ~1 h | Required |
-| 5 | [Writing](modules/05-writing.qmd) | ~1.5 h + course | Required |
-| 6 | [Data and R](modules/06-data-and-r.qmd) | ~2 h | Data sections |
-| 7 | [Publishing](modules/07-publishing.qmd) | ~30 min | Optional |
+| 1 | [Lab culture](modules/01-lab-culture.qmd) | ~20 min | Required |
+| 2 | [Tools setup](modules/02-tools-setup.qmd) | ~45 min | Required |
+| 3 | [Ethics, privacy and data security](modules/03-ethics-privacy.qmd) | ~15 min | Required |
+| 4 | [Running a study](modules/04-running-a-study.qmd) | ~25 min | Required |
+| 5 | [Writing](modules/05-writing.qmd) | ~25 min + online course | Required |
+| 6 | [Data and R](modules/06-data-and-r.qmd) | ~40 min | Data sections |
+| 7 | [Publishing](modules/07-publishing.qmd) | ~15 min | Optional |
 
 ## The short version
 
 If you remember nothing else, remember this:
 
 - Be open to learning new things, and improve your academic writing and public speaking.
+- Come to the bi-weekly lab meetings and weekly co-working sessions.
+- Use AI tools freely, but check their output and never give them participant data.
 - Use online documents only: Google Docs, Sheets and Slides.
 - Use headings and a reference manager in every document.
 - If you are stuck, search and ask generative AI before asking for human help, but don't stay stuck for long.

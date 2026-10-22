@@ -7,6 +7,7 @@ forms:
   m5: "https://forms.gle/y7zPTGHnPJd83yKr9"
   m6: "https://forms.gle/XGpgQpWFkHKf2DrV6"
   m7: "https://forms.gle/zivJT1hX4fuznL9g7"
+  feedback: "https://forms.gle/BTbzjVtzvPndCXky7"
 
 links:
   slack: "https://stress-emotion-lab.slack.com/"
@@ -18,3 +19,12 @@ links:
   silvia: "https://drive.google.com/file/d/1IvObP9sEztG-qEu_y7zdYXjVZ9NebS1X/view"
   classroom: "https://classroom.google.com/c/MjA4NTE2MjEzNjMx?cjc=u3p2y2l"
   report_example: "https://nthun.github.io/performance_sleep_quality/"
+  templates: "https://drive.google.com/drive/folders/1OFCCAbiBpQvsVYlWSBhIfkpmAGHSWYpN"
+  tpl_review: "https://docs.google.com/document/d/1Itz7fXN_M3QPqmno5ejTSXzovn__P4n-Z_5XBFpv3sA"
+  tpl_prereg: "https://docs.google.com/document/d/14QbHp90qnB9o6UDSWbI1BY7woXLWqTuwYoCRW0jYd4M"
+  tpl_participant_id: "https://docs.google.com/document/d/1ge5danqkh-m5QR053LuQm5Dz-9xsgTMtjM5VtFQg-oI"
+  tpl_authorization: "https://docs.google.com/document/d/1kb2SRuucVpHdVpwa3ISzrerUgYj9502lzGIICxX7RCc"
+  tpl_scale_keys: "https://docs.google.com/spreadsheets/d/16As9SfLei1-WahBHCA1GiX79_RpRFUc-eSQftxaD4nw"
+  tpl_journal: "https://docs.google.com/spreadsheets/d/1ulugSkF4A7FILu1HBSp6BzLvmxRmKYiOulr-D1naX0I"
+  tpl_revision: "https://docs.google.com/spreadsheets/d/1kjI1WqR9hDtcI20J62WG_QO5Zabm5_D2ZktIOSe6quo"
+  tpl_tenzing: "https://docs.google.com/spreadsheets/d/19Gjx2S5DtsCY3BZ9FNs4Zi1VPTfxX4O3tVH1GM_1eWo"

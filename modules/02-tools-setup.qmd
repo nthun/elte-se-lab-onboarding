@@ -1,35 +1,35 @@
 ---
 title: "2. Tools setup"
-subtitle: "The accounts and tools you need before you start"
+subtitle: "The accounts, tools and AI assistants you will use"
 ---
 
 ::: module-meta
-<span>⏱ ~1.5 hours</span><span>Track: everyone [BA]{.ba-tag}</span><span>Checkpoint: [Module 2 quiz]({{< var forms.m2 >}})</span>
+<span>⏱ ~45 minutes</span><span>Track: everyone [BA]{.ba-tag}</span><span>Checkpoint: [Module 2 quiz]({{< var forms.m2 >}})</span>
 :::
 
 ![](../assets/img/m2-tools.jpg){.module-hero fig-alt="Two grinning men holding chainsaws"}
 
 ## Why this matters
 
-A shared set of tools means anyone in the lab can find, open and continue anyone else's work. This module is mostly hands-on: by the end, your accounts are set up and connected. All of these tools have excellent tutorials; if you don't know one, follow the link, create an account and watch the intro video.
+A shared set of tools means anyone in the lab can find, open and continue anyone else's work. This module is mostly hands-on: by the end, your accounts are set up and connected. All of these tools have good tutorials; if you don't know one, follow the link and spend a few minutes with it.
 
 ## Everything lives in the cloud [BA]{.ba-tag}
 
 ::: callout-important
 ## Super important
-We **don't use local files**, such as an Excel sheet saved on one specific computer. Everything is in the cloud, in Google Workspace, so it is shared, backed up and version controlled.
+We **don't use local files**, such as an Excel sheet saved on one specific computer. Everything is in Google Workspace, so it is shared, backed up and version controlled.
 :::
 
 - [Google Workspace](https://workspace.google.com/) tools: Docs, Drive, Sheets, Forms, Calendar, Meet. They make collaboration easy.
-- [OSF](https://osf.io/) keeps *all* files of a research project together, and is where we publish data and materials.
-- Always use [headings](https://support.google.com/docs/answer/6367684) and [reference management](https://en.wikipedia.org/wiki/Reference_management_software) in manuscripts. Module 5 covers both in detail.
+- Pre-registrations are submitted on [OSF Registries](https://osf.io/registries). (We no longer use OSF *projects* for storing files.)
+- The lab keeps ready-made [templates]({{< var links.templates >}}) for recurring documents: manuscripts, pre-registrations, participant IDs, scale keys and more. The modules point to the relevant ones.
 
 ## Communication and scheduling [BA]{.ba-tag}
 
 - We communicate on [Slack]({{< var links.slack >}}). Rarely, when outside parties are involved, we use MS Teams.
 - Meetings and task deadlines are scheduled in [Google Calendar](https://calendar.google.com/).
 - Meetings are online in [Google Meet](https://meet.google.com/) by default.
-- For finding a time for group meetings we often use [Doodle](https://doodle.com/). Link it to your Google Calendar so it can see when you are busy.
+- To find a time for a group meeting, we use [When2meet](https://www.when2meet.com/). You can import your availability from Google Calendar instead of clicking it in by hand.
 - For external communication, the lab has a shared email address: {{< var links.lab_email >}}.
 
 ## Project management in ClickUp
@@ -40,16 +40,39 @@ We use [ClickUp]({{< var links.clickup >}}) to track tasks, who is responsible, 
 - Task outputs (documents, repositories) are linked from the task, so others can find them.
 - It shows bottlenecks early and makes it easier to share or reallocate work.
 
-Your own onboarding is a ClickUp task, too. Each **Do** item in this course is a subtask there.
+Your own onboarding is a ClickUp task, too. Each **Do** item in this course is a checklist item there.
 
 ## At the university [BA]{.ba-tag}
 
 - Set up [eduroam](https://www.esnelte.hu/wifi-setup-elte) for internet access on campus.
 - University software licences are available from the [ELTE IIG site](https://iig.elte.hu/content/szoftver-disztribucio.cl.991?m=5807).
 
-## Reference manager [BA]{.ba-tag}
+## Reference manager: Zotero [BA]{.ba-tag}
 
-You **must** use a reference manager; handmade reference lists are not acceptable. Our primary one is [Paperpile](https://paperpile.com/), because it works reliably both in Google Docs and in offline word processors, but it isn't free. Two free options are [Zotero](https://www.zotero.org/) and [Mendeley](https://www.mendeley.com/). If you don't have a Paperpile licence, use Zotero with its Google Docs integration.
+You **must** use a reference manager; handmade reference lists are not acceptable. Learn [Zotero](https://www.zotero.org/): it is free, works with Google Docs, and is what you will use in your own documents. (The lab also has a Paperpile account; you will be told if a project uses it.)
+
+To get going:
+
+- [Zotero quick start guide](https://www.zotero.org/support/quick_start_guide)
+- [Using Zotero with Google Docs](https://www.zotero.org/support/google_docs)
+- The Zotero Connector browser extension, which saves a paper with one click from the journal's page.
+
+## Generative AI and AI agents [BA]{.ba-tag}
+
+We encourage using AI. Used well, it saves hours on routine work and makes you better at the rest.
+
+- **Chat assistants** such as [ChatGPT](https://chatgpt.com/), [Claude](https://claude.ai/) or [Gemini](https://gemini.google.com/) are great for drafting and editing text, explaining statistics, writing and debugging R code, getting feedback, and brainstorming. [DeepL](https://www.deepl.com/) is excellent for translation.
+- **AI agents** go further: they work through multi-step tasks on your files and apps on their own. Examples are Claude (with its file and app connectors, or Claude Code), ChatGPT's agent and Codex, and [GitHub Copilot](https://github.com/features/copilot)'s coding agent. Typical lab uses:
+  - prefilling a lab template (for example, a pre-registration from the research plan, or scale keys from a questionnaire);
+  - writing and running an analysis script, then fixing its errors;
+  - turning meeting notes into ClickUp tasks, or tidying up a project folder.
+
+The rules:
+
+- **You are responsible** for everything you submit, whoever or whatever drafted it. Read it, check it, and make sure you understand it.
+- **Check the parts that matter most:** references, numbers, statistical claims and code results.
+- **Never put non-anonymized participant data or other confidential information into an AI tool.** Give agents access only to the files a task needs.
+- Follow the Faculty's [guideline on AI-generated content](https://ppk.elte.hu/en/documents/artificial-intelligence), and disclose AI use where journals or the university require it.
 
 ## Do
 
@@ -57,10 +80,9 @@ These tasks are also in your ClickUp onboarding task.
 
 - [ ] Accept the ClickUp invitation and find your onboarding task.
 - [ ] Send your Google account address to the lab leader so you can be added to shared folders and calendars.
-- [ ] Create an [OSF](https://osf.io/) account and send your profile link to the lab leader.
-- [ ] Connect Doodle to your Google Calendar.
 - [ ] Set up eduroam on your laptop and phone.
-- [ ] Install Zotero (or Paperpile) and connect it to Google Docs. Test it: insert one citation and a bibliography into a new Google Doc.
+- [ ] Zotero training: install Zotero and the Zotero Connector, save three papers from the web, then insert two citations and a bibliography into a new Google Doc.
+- [ ] Try an AI assistant on a real task, for example ask it to explain a statistical method you'll need, and check its answer against a textbook or paper.
 
 ## Check yourself
 
@@ -69,10 +91,10 @@ You collected pilot data in an Excel file on the lab computer. What should you d
 
 - [ ] Leave it there; everyone in the lab can use that computer.
 - [ ] Email it to yourself so you have a copy.
-- [x] Move it to the project's shared cloud folder (Google Sheets or the project's Drive/OSF folder).
+- [x] Move it to the project's shared Google Drive folder (ideally as a Google Sheet).
 
 ::: explain
-We don't use local files. Data and documents go to the shared cloud storage of the project, where they are backed up, version controlled and accessible to the team.
+We don't use local files. Data and documents go to the project's shared cloud storage, where they are backed up, version controlled and accessible to the team.
 :::
 :::
 
@@ -81,7 +103,7 @@ Which reference list is acceptable in a lab manuscript?
 
 - [ ] A carefully typed APA reference list.
 - [ ] References copied from Google Scholar's "Cite" button.
-- [x] A bibliography generated by Paperpile, Zotero or Mendeley.
+- [x] A bibliography generated by Zotero (or the lab's Paperpile).
 
 ::: explain
 Handmade reference lists aren't accepted, however careful. A reference manager keeps citations and the bibliography consistent and lets us switch citation style with one click.
@@ -89,17 +111,30 @@ Handmade reference lists aren't accepted, however careful. A reference manager k
 :::
 
 ::: quiz
-Where do you check whether a task assigned to you has a deadline and who else is working on it?
+You want an AI agent to prefill a pre-registration template from your study's documents. Which of these must you **not** give it?
 
-- [ ] Slack
-- [x] ClickUp
-- [ ] Google Drive
+- [ ] The research plan
+- [ ] The questionnaire items
+- [x] The raw data file with participants' names and emails
+- [ ] The lab's pre-registration template
 
 ::: explain
-ClickUp tracks tasks, responsible people, dependencies and deadlines. Slack is for conversation, not for tracking.
+Never put non-anonymized participant data or other confidential information into an AI tool. Everything else here is exactly what the agent needs.
+:::
+:::
+
+::: quiz
+You need to find a time for a meeting with five people. What do you use?
+
+- [ ] A long Slack thread
+- [x] When2meet
+- [ ] Email back and forth
+
+::: explain
+We use When2meet for scheduling group meetings, and you can import your Google Calendar availability into it.
 :::
 :::
 
 ## Checkpoint
 
-When all setup subtasks are ticked off in ClickUp, take the [Module 2 checkpoint quiz]({{< var forms.m2 >}}).
+When all setup items are ticked off in ClickUp, take the [Module 2 checkpoint quiz]({{< var forms.m2 >}}).

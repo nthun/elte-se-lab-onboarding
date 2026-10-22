@@ -4,7 +4,7 @@ subtitle: "Who we are, and how we work together"
 ---
 
 ::: module-meta
-<span>⏱ ~45 minutes</span><span>Track: everyone [BA]{.ba-tag}</span><span>Checkpoint: [Module 1 quiz]({{< var forms.m1 >}})</span>
+<span>⏱ ~20 minutes</span><span>Track: everyone [BA]{.ba-tag}</span><span>Checkpoint: [Module 1 quiz]({{< var forms.m1 >}})</span>
 :::
 
 ![](../assets/img/m1-lab-culture.jpg){.module-hero fig-alt="Guests in white tie raising glasses at a formal state banquet"}
@@ -22,6 +22,20 @@ The ELTE Stress and Emotions research group aims to explore the links between he
 
 Az ELTE Stressz és Érzelmek kutatócsoport célja, hogy feltárja a felfokozott élettani állapotok, mint akut fiziológiai stressz, valamint az emberi viselkedés, kogníció, percepció, és érzelmek közötti összefüggéseket. Projektjeinkben kísérleti módszerek segítségével vizsgáljuk a fiziológiai arousal hatását laboratóriumi és mindennapi helyzetekben. Az elvégzett kutatások hatására azt reméljük, hogy jobban megértjük majd az emberi elme testi beágyazottságát, ami hozzájárulhat a tudatról alkotott modelljeink fejlesztéséhez.
 :::
+
+## Your mentor [BA]{.ba-tag}
+
+Every newcomer gets a **mentor**: an experienced lab member who helps you settle in. Your mentor is your first contact for practical questions ("where is this file?", "how do we usually do that?"), can review your first tasks, and joins you for your first lab sessions. You'll get their name when you join; meet them in your first week.
+
+## Lab routine [BA]{.ba-tag}
+
+| What | How often | Where |
+|---|---|---|
+| Lab meeting | Every two weeks | Online, Google Meet |
+| Co-working session | Every week | Online, Google Meet |
+| Social event | At least once a semester | In person |
+
+Lab meetings and co-working sessions are **mandatory by default**. If you can't attend one, let us know in advance. Co-working sessions are for getting real work done together: bring a task, say what you plan to finish, and ask for help when you get stuck. The social events are optional, but please come; they're the best way to get to know the people you work with.
 
 ## Lab meetings [BA]{.ba-tag}
 
@@ -75,7 +89,7 @@ Getting stuck is normal, but staying stuck is frustrating for you and for the ot
 
 ## Communicating in academia
 
-Academic communication often means formal emails, and you will regularly need letters of recommendation. These two guides cover both:
+Academic communication often means formal emails, and you will regularly need letters of recommendation. Two excellent guides by Talia Waltzer cover both:
 
 - [Communicating professionally]({{< var links.communicating >}})
 - [Letter of recommendation guide (for students)]({{< var links.recommendation >}}). In short: you usually approach the person yourself and prepare everything so they can reply quickly.
@@ -86,6 +100,8 @@ These tasks are also in your ClickUp onboarding task.
 
 - [ ] Join the Slack workspace and set a profile photo and your full name.
 - [ ] Introduce yourself in **#general**: who you are, what you study, and what you would like to learn in the lab.
+- [ ] Meet your mentor in your first week (online is fine).
+- [ ] Make sure the bi-weekly lab meeting and the weekly co-working session are in your calendar.
 - [ ] Read the *Communicating professionally* guide.
 
 ## Check yourself
@@ -125,6 +141,18 @@ Which of these are required before a task counts as done?
 
 ::: explain
 The definition of done has four parts: done according to the description, verified, communicated in writing with a findable output, and marked complete.
+:::
+:::
+
+::: quiz
+You have an exam the day of the weekly co-working session. What do you do?
+
+- [ ] Nothing; co-working is optional.
+- [x] Let the team know in advance that you'll miss this one.
+- [ ] Join late without saying anything.
+
+::: explain
+Lab meetings and co-working sessions are mandatory by default. Missing one is fine with a good reason, as long as you tell us in advance.
 :::
 :::
 

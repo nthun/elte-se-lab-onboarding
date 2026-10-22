@@ -4,7 +4,7 @@ subtitle: "Authorship, citation ethics and responding to reviewers"
 ---
 
 ::: module-meta
-<span>⏱ ~30 minutes</span><span>Track: everyone working toward a publication (optional for BA)</span><span>Checkpoint: [Module 7 quiz]({{< var forms.m7 >}})</span>
+<span>⏱ ~15 minutes</span><span>Track: everyone working toward a publication (optional for BA)</span><span>Checkpoint: [Module 7 quiz]({{< var forms.m7 >}})</span>
 :::
 
 ![](../assets/img/m7-publishing.jpg){.module-hero fig-alt="A scientist receiving an award at a formal prize ceremony"}
@@ -19,7 +19,11 @@ Authorship is how credit and responsibility are shared in science. Clear rules, 
 - Authorship goes to lab members who make a **continuous creative contribution** to the project.
 - All authors are involved in the writing process, and all authors must take an active part in it.
 - Honorary and guest authorships are not allowed.
-- We record contributions with the [tenzing app](https://rollercoaster.shinyapps.io/tenzing/), which uses the [CRediT taxonomy](https://credit.niso.org/).
+- We record contributions with the [tenzing app](https://rollercoaster.shinyapps.io/tenzing/), which uses the [CRediT taxonomy](https://credit.niso.org/). Start from a copy of the [contributors table template]({{< var links.tpl_tenzing >}}).
+
+## Choosing a journal
+
+Before writing, we agree on a shortlist of target journals. Collect candidates in a copy of the [target journal template]({{< var links.tpl_journal >}}) (journal, publisher, impact factor, SJR and WoS rankings). An AI agent can prefill the rankings for you; spot-check a few against the official sources.
 
 ## Citation engineering
 
@@ -35,6 +39,7 @@ Questionable practices to inflate citation counts are not acceptable:
 - The first reading of a review can feel insulting. Take your time before you answer.
 - Don't get defensive. Treat the review as feedback that helps you improve the work.
 - Use this article as a guide: <https://psyarxiv.com/kyfus/>.
+- Track every reviewer comment in a copy of the [revision tracker template]({{< var links.tpl_revision >}}): one row per comment (E = editor, R1.01 = reviewer 1, comment 1), with the answer, the manuscript change, who is responsible, and whether it's approved. An AI agent can split the decision letter into rows and draft first answers for you to revise.
 
 ## Do
 

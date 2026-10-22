@@ -1,10 +1,10 @@
 ---
 title: "5. Writing"
-subtitle: "Manuscripts, formatting, references, AI and version control"
+subtitle: "Manuscripts, formatting, references and version control"
 ---
 
 ::: module-meta
-<span>⏱ ~1.5 hours, plus an online course</span><span>Track: everyone [BA]{.ba-tag}</span><span>Checkpoint: [Module 5 quiz]({{< var forms.m5 >}})</span>
+<span>⏱ ~25 minutes, plus an online course</span><span>Track: everyone [BA]{.ba-tag}</span><span>Checkpoint: [Module 5 quiz]({{< var forms.m5 >}})</span>
 :::
 
 ![](../assets/img/m5-writing.jpg){.module-hero fig-alt="A playwright in Elizabethan costume writing with a quill at a candlelit table"}
@@ -24,7 +24,7 @@ For building a steady writing habit, read [Silvia (2007): How to write a lot]({{
 ## Word processing [BA]{.ba-tag}
 
 - We work in **Google Docs**, even when the final file needs to be a .docx.
-- Start every document from the [lab template]({{< var links.doc_template >}}).
+- Start every manuscript from a lab template: [experimental study]({{< var links.doc_template >}}) or [review study]({{< var links.tpl_review >}}). An AI agent can prefill the template from your research plan, pre-registration and notes, so you start from a structured draft instead of a blank page.
 - We write in **English (US)**, with rare exceptions. All suggestions and comments are in English, too.
 - **Always use [headings](https://www.youtube.com/watch?v=U3pfqa2GsuA).**
 - Use Grammarly or another writing tool for spell checking.
@@ -43,13 +43,13 @@ For building a steady writing habit, read [Silvia (2007): How to write a lot]({{
 
 - **One document, one file.** No file names like `thesis210210_final_ver2.docx`.
 - A good file name identifies the topic, isn't vague, and has no characters that confuse operating systems. A good example: *Tactile sensitivity and arousal manuscript*.
-- [Version control](https://www.youtube.com/watch?v=X2W1dUM3bu8) stores all previous versions of a document while you only see the latest. Google Drive and OSF do this automatically.
+- [Version control](https://www.youtube.com/watch?v=X2W1dUM3bu8) stores all previous versions of a document while you only see the latest. Google Drive does this automatically.
 - In Google Docs, use [named versions](https://www.youtube.com/watch?v=Won2dVZGBE0) for milestones, such as "Sent to co-authors" or "Submitted".
 - For code, we use git and GitHub (module 6).
 
 ## References [BA]{.ba-tag}
 
-Use a reference manager in every document (you set one up in module 2). I don't have a strong preference for citation style, since it changes with one click, but the field standard is APA.
+Use Zotero in every document (you set it up in module 2). I don't have a strong preference for citation style, since it changes with one click, but the field standard is APA.
 
 ## Plagiarism [BA]{.ba-tag}
 
@@ -59,20 +59,16 @@ Use a reference manager in every document (you set one up in module 2). I don't 
 - Use direct quotes only for definitions or idioms, and avoid long verbatim passages.
 - ELTE has a [Turnitin](https://www.turnitin.com/) licence that we can use if necessary.
 
-## Generative AI [BA]{.ba-tag}
+## Generative AI in writing [BA]{.ba-tag}
 
-- Generative AI can be a great productivity tool for rephrasing sentences, drafting an abstract or translating a document.
-- Feel free to use it, but do it responsibly. Follow the Faculty's [guideline on AI-generated content](https://ppk.elte.hu/en/documents/artificial-intelligence).
-- LLMs still struggle with some tasks that are central to academic work, which makes AI-generated content fairly easy to spot.
-- Never use AI output blindly. Always double-check it, especially references, numbers and claims about the literature.
-- Useful tools: general assistants such as [ChatGPT](https://chatgpt.com/), [Claude](https://claude.ai/) or [Gemini](https://gemini.google.com/) for text and code; [DeepL](https://www.deepl.com/) for translation; [GitHub Copilot](https://github.com/features/copilot) for code.
+AI assistants and agents are welcome in writing, for example to restructure a draft, tighten sentences, translate, or get feedback before you send a text to co-authors. The rules are in module 2: you are responsible for the final text, and every reference and claim must be checked.
 
 ## Do
 
 These tasks are also in your ClickUp onboarding task.
 
 - [ ] Enroll in *Writing in the Sciences* on Coursera, and finish at least the first two units.
-- [ ] Formatting exercise: make a copy of the lab template, then rewrite a one-page text (for example, your fieldwork plan or an essay) in it. Use only heading styles and the template's formatting, insert two citations with your reference manager, add a bibliography, and save a named version called *"Onboarding exercise"*. Share it with the lab leader and link it in ClickUp.
+- [ ] Formatting exercise: make a copy of the experimental-study manuscript template, then rewrite a one-page text (for example, your fieldwork plan or an essay) in it. Use only heading styles and the template's formatting, insert two citations with Zotero, add a bibliography, and save a named version called *"Onboarding exercise"*. Share it with the lab leader and link it in ClickUp.
 
 ## Check yourself
 

@@ -11,7 +11,7 @@ Your onboarding is tracked in a personal ClickUp task called **Onboarding – yo
 2. Take the module's checkpoint quiz below. You pass with **80%** and can retake a quiz as many times as you like.
 3. When everything in a module is done, mark its subtask as complete and leave a short comment with links to anything you produced.
 
-Onboarding is finished when every module you need is complete. For the BA track, that's modules 1–5 and the data exercises in module 6.
+Onboarding is finished when every module you need is complete and you've given us feedback. For the BA track, that's modules 1–5 and the data exercises in module 6.
 
 ## Checkpoint quizzes
 
@@ -24,3 +24,9 @@ Onboarding is finished when every module you need is complete. For the BA track,
 | 5. Writing | [Module 5 quiz]({{< var forms.m5 >}}) |
 | 6. Data and R | [Module 6 quiz]({{< var forms.m6 >}}) |
 | 7. Publishing | [Module 7 quiz]({{< var forms.m7 >}}) |
+
+## Give feedback
+
+When you're done, please fill in the [anonymous feedback form]({{< var forms.feedback >}}). It takes about 5 minutes, and we don't collect your name or email. Tell us what was confusing, what was missing, and what you wish you had known in your first weeks. Every cohort's answers make the course better for the next one.
+
+Then tick off the **Wrap-up – feedback** subtask in ClickUp and have a short wrap-up chat with your mentor.

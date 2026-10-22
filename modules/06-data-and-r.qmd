@@ -14,25 +14,27 @@ format:
 webr:
   packages:
     - dplyr
+    - stringr
 ---
 
 ::: module-meta
-<span>⏱ ~2 hours</span><span>Track: data sections [BA]{.ba-tag}; R sections for everyone who analyzes data</span><span>Checkpoint: [Module 6 quiz]({{< var forms.m6 >}})</span>
+<span>⏱ ~40 minutes (BA: ~15)</span><span>Track: data sections [BA]{.ba-tag}; R sections for everyone who analyzes data</span><span>Checkpoint: [Module 6 quiz]({{< var forms.m6 >}})</span>
 :::
 
 ![](../assets/img/m6-data-and-r.jpg){.module-hero fig-alt="A man in big glasses at a 1980s home computer"}
 
 ## Why this matters
 
-Datasets outlive the people who create them. A clean, well-named, anonymized dataset can be reused, shared on OSF and understood by the next student. A messy one becomes a liability. The code exercises on this page run in your browser: there is nothing to install. The first time, R takes a few seconds to load.
+Datasets outlive the people who create them. A clean, well-named, anonymized dataset can be reused, shared publicly and understood by the next student. A messy one becomes a liability. The code exercises on this page run in your browser: there is nothing to install. The first time, R takes a few seconds to load.
 
 ## Working with data [BA]{.ba-tag}
 
 - Use Google Sheets whenever possible. Otherwise, prefer `.tsv` or `.csv` to `.xlsx`.
 - Datasets are version controlled and stored in the cloud.
 - Variable names are in **English** and are **both human and computer readable**: `hr_baseline`, not `HR baseline (bpm)!` or `v17`.
-- Every dataset has a **unique ID variable**. IDs mix letters and zero-padded numbers, with no special or accented characters, for example `TS001` or `UI45R7`.
+- Every dataset has a **unique ID variable**. Our participant IDs follow the lab format: "SE" plus 8 digits, for example `SE05685678` (see the [Participant ID template]({{< var links.tpl_participant_id >}})). No spaces, special or accented characters.
 - Personal identifiers (email, Neptun code, etc.) are anonymized as soon as possible and **never used as IDs** in raw form.
+- For questionnaires, document every item in a copy of the [scale keys template]({{< var links.tpl_scale_keys >}}): item code, wording, scale and subscale, whether it is reversed, and the response range. Scoring code reads this table, so reversed items and subscales can't be mixed up. An AI agent can prefill it from the questionnaire; check the reversed items yourself.
 
 ## Data analysis skills [BA]{.ba-tag}
 
@@ -68,16 +70,24 @@ These exercises use the conventions above. Edit the code, press **Run Code**, th
 
 ### Exercise 1: Readable variable names [BA]{.ba-tag}
 
-The pilot dataset `raw` has unreadable column names. Rename them to `participant`, `age_years` and `hr_baseline` (in this order).
+The pilot dataset `raw` came from a Hungarian survey export, with these column names:
+
+| Current name | Contains | Rename to |
+|---|---|---|
+| `Résztvevő` | participant code | `participant` |
+| `Életkor (év)` | age in years | `age_years` |
+| `Pulzus nyugalomban!` | resting heart rate | `hr_baseline` |
+
+Fill in the new names.
 
 ```{webr}
 #| setup: true
 #| exercise: ex_names
 library(dplyr)
 raw <- data.frame(
-  `Résztvevő` = c("Anna", "Bence", "Csilla"),
-  `Age (years)` = c(21, 23, 22),
-  `HR baseline!` = c(72, 80, 68),
+  `Résztvevő` = c("P01", "P02", "P03"),
+  `Életkor (év)` = c(21, 23, 22),
+  `Pulzus nyugalomban!` = c(72, 80, 68),
   check.names = FALSE
 )
 ```
@@ -86,9 +96,9 @@ raw <- data.frame(
 #| exercise: ex_names
 raw |>
   rename(
-    participant = `Résztvevő`,
-    ______ = `Age (years)`,
-    ______ = ______
+    ______ = `Résztvevő`,
+    ______ = `Életkor (év)`,
+    ______ = `Pulzus nyugalomban!`
   )
 ```
 
@@ -113,53 +123,67 @@ Inside `rename()`, the new name goes on the left and the old name, in backticks,
 raw |>
   rename(
     participant = `Résztvevő`,
-    age_years = `Age (years)`,
-    hr_baseline = `HR baseline!`
+    age_years = `Életkor (év)`,
+    hr_baseline = `Pulzus nyugalomban!`
   )
 ```
 :::
 
 ### Exercise 2: Proper ID variables [BA]{.ba-tag}
 
-Add an `id` column with zero-padded IDs in the lab format: `TS001`, `TS002`, and so on, one per row.
+Lab IDs are built from three parts: "SE", the participant's birth **day** as two digits, the **last two digits** of their mother's birth year, and the **last four digits** of their phone number. A participant born on the 5th, whose mother was born in 1968 and whose phone number ends in 5678, gets `SE05685678`.
+
+The `parts` data has these pieces in separate columns. Build the `id` column. Use `str_pad()` to pad the birth day to two digits, `str_sub()` to take the last two digits of the year, and `str_c()` to glue everything together.
 
 ```{webr}
 #| setup: true
 #| exercise: ex_ids
 library(dplyr)
-pilot <- data.frame(
-  age_years = c(21, 23, 22, 25, 20),
-  hr_baseline = c(72, 80, 68, 75, 90)
+library(stringr)
+parts <- data.frame(
+  birth_day = c(5, 23, 9),
+  mother_birth_year = c(1968, 1972, 2001),
+  phone_last4 = c("5678", "0412", "9930")
 )
 ```
 
 ```{webr}
 #| exercise: ex_ids
-pilot |>
-  mutate(id = sprintf(______, row_number()))
+parts |>
+  mutate(id = str_c(
+    "SE",
+    str_pad(birth_day, width = ______, pad = ______),
+    str_sub(mother_birth_year, start = ______),
+    phone_last4
+  ))
 ```
 
 ```{webr}
 #| exercise: ex_ids
 #| check: true
-target <- sprintf("TS%03d", 1:5)
+target <- c("SE05685678", "SE23720412", "SE09019930")
 if (!is.data.frame(.result) || !"id" %in% names(.result)) {
   list(correct = FALSE, message = "The result should be a data frame with an `id` column.")
 } else if (identical(as.character(.result$id), target)) {
-  list(correct = TRUE, message = "Correct. Zero padding keeps IDs the same length and makes them sort properly.")
+  list(correct = TRUE, message = "Correct. Every ID has the same length and matches the lab format (^SE\\d{8}$).")
 } else {
-  list(correct = FALSE, message = paste("Your IDs:", paste(.result$id, collapse = ", "), "- expected TS001 ... TS005."))
+  list(correct = FALSE, message = paste("Your IDs:", paste(.result$id, collapse = ", "), "- expected", paste(target, collapse = ", ")))
 }
 ```
 
 ::: { .hint exercise="ex_ids" }
-`sprintf()` uses a format string. `%03d` means "an integer, padded with zeros to three digits". Put the letters before it: `"TS%03d"`.
+For the birth day, `width = 2` and `pad = "0"` turn `5` into `"05"`. For the year, a negative `start` counts from the end: `str_sub(1968, start = -2)` gives `"68"`.
 :::
 
 ::: { .solution exercise="ex_ids" }
 ```r
-pilot |>
-  mutate(id = sprintf("TS%03d", row_number()))
+parts |>
+  mutate(id = str_c(
+    "SE",
+    str_pad(birth_day, width = 2, pad = "0"),
+    str_sub(mother_birth_year, start = -2),
+    phone_last4
+  ))
 ```
 :::
 
@@ -172,7 +196,7 @@ The dataset `survey` already has a proper `id`, but it still contains participan
 #| exercise: ex_anon
 library(dplyr)
 survey <- data.frame(
-  id = c("TS001", "TS002", "TS003"),
+  id = c("SE05685678", "SE23720412", "SE09019930"),
   email = c("a@example.com", "b@example.com", "c@example.com"),
   neptun = c("ABC123", "DEF456", "GHI789"),
   stress = c(3, 5, 2)
@@ -265,11 +289,11 @@ Which of these is a good ID for a participant?
 
 - [ ] `kovács.anna@gmail.com`
 - [ ] `ÁB 7`
-- [x] `TS007`
+- [x] `SE05685678`
 - [ ] `7`
 
 ::: explain
-IDs mix letters and zero-padded numbers, with no special or accented characters, and they must never be personal identifiers.
+Lab IDs are "SE" plus 8 digits, with no spaces, special or accented characters. They are never raw personal identifiers such as names or email addresses.
 :::
 :::
 
