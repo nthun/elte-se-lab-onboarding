@@ -1,0 +1,132 @@
+<script>
+// Turns ::: {.quiz} blocks with a markdown task list into self-check questions.
+// Mark correct options with [x], wrong ones with [ ]. More than one [x] = "select all that apply".
+// An optional ::: {.explain} block inside the quiz is revealed once the question is answered.
+(function () {
+  function init() {
+    var quizzes = Array.prototype.slice.call(document.querySelectorAll("div.quiz"));
+    var score = { firstTry: 0, answered: 0, total: 0 };
+    var scoreEl = null;
+
+    function updateScore() {
+      if (!scoreEl) return;
+      scoreEl.textContent = "Self-check: " + score.answered + " of " + score.total +
+        " answered, " + score.firstTry + " right on the first try.";
+    }
+
+    quizzes.forEach(function (quiz, qi) {
+      var list = quiz.querySelector("ul.task-list, ul");
+      if (!list) return;
+      score.total += 1;
+
+      var options = Array.prototype.slice.call(list.children).map(function (li) {
+        var input = li.querySelector("input[type=checkbox]");
+        var correct = !!(input && input.checked);
+        if (input) input.remove();
+        var label = li.querySelector("label");
+        return { correct: correct, html: (label ? label.innerHTML : li.innerHTML).trim() };
+      });
+      var nCorrect = options.filter(function (o) { return o.correct; }).length;
+      var multi = nCorrect > 1;
+
+      var explain = quiz.querySelector(".explain");
+      if (explain) explain.hidden = true;
+
+      var tag = document.createElement("div");
+      tag.className = "quiz-tag";
+      tag.textContent = "Check yourself " + (qi + 1) + (multi ? " · select all that apply" : "");
+      quiz.insertBefore(tag, quiz.firstChild);
+
+      var box = document.createElement("div");
+      box.className = "quiz-options";
+      var feedback = document.createElement("div");
+      feedback.className = "quiz-feedback";
+      feedback.setAttribute("aria-live", "polite");
+
+      var attempts = 0;
+      var done = false;
+      var buttons = options.map(function (opt) {
+        var b = document.createElement("button");
+        b.type = "button";
+        b.className = "quiz-option";
+        b.innerHTML = opt.html;
+        b.setAttribute("aria-pressed", "false");
+        box.appendChild(b);
+        return b;
+      });
+
+      function finish(firstTry) {
+        done = true;
+        score.answered += 1;
+        if (firstTry) score.firstTry += 1;
+        if (explain) explain.hidden = false;
+        buttons.forEach(function (b) { b.disabled = true; });
+        updateScore();
+      }
+
+      if (!multi) {
+        buttons.forEach(function (b, i) {
+          b.addEventListener("click", function () {
+            if (done) return;
+            attempts += 1;
+            if (options[i].correct) {
+              b.classList.add("is-correct");
+              feedback.textContent = attempts === 1 ? "Correct." : "Correct, you got there.";
+              feedback.className = "quiz-feedback ok";
+              finish(attempts === 1);
+            } else {
+              b.classList.add("is-wrong");
+              b.disabled = true;
+              feedback.textContent = "Not quite. Try another option.";
+              feedback.className = "quiz-feedback no";
+            }
+          });
+        });
+      } else {
+        buttons.forEach(function (b) {
+          b.addEventListener("click", function () {
+            if (done) return;
+            var on = b.getAttribute("aria-pressed") !== "true";
+            b.setAttribute("aria-pressed", on ? "true" : "false");
+            b.classList.toggle("is-selected", on);
+          });
+        });
+        var check = document.createElement("button");
+        check.type = "button";
+        check.className = "quiz-check";
+        check.textContent = "Check answer";
+        check.addEventListener("click", function () {
+          if (done) return;
+          attempts += 1;
+          var allRight = buttons.every(function (b, i) {
+            return (b.getAttribute("aria-pressed") === "true") === options[i].correct;
+          });
+          if (allRight) {
+            buttons.forEach(function (b, i) { if (options[i].correct) b.classList.add("is-correct"); });
+            feedback.textContent = "Correct.";
+            feedback.className = "quiz-feedback ok";
+            check.disabled = true;
+            finish(attempts === 1);
+          } else {
+            feedback.textContent = "Not quite. Some options are missing or shouldn't be selected.";
+            feedback.className = "quiz-feedback no";
+          }
+        });
+        box.appendChild(check);
+      }
+
+      list.replaceWith(box);
+      box.after(feedback);
+    });
+
+    if (quizzes.length) {
+      scoreEl = document.createElement("p");
+      scoreEl.className = "quiz-score";
+      quizzes[quizzes.length - 1].after(scoreEl);
+      updateScore();
+    }
+  }
+  if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", init);
+  else init();
+})();
+</script>

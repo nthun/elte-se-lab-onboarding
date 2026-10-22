@@ -1,0 +1,155 @@
+---
+title: "1. Lab culture"
+subtitle: "Who we are, and how we work together"
+---
+
+::: module-meta
+<span>⏱ ~45 minutes</span><span>Track: everyone [BA]{.ba-tag}</span><span>Checkpoint: [Module 1 quiz]({{< var forms.m1 >}})</span>
+:::
+
+## Why this matters
+
+Most problems in a research group are not about statistics. They are about missed deadlines nobody mentioned, decisions lost in a chat thread, or someone stuck for two weeks without asking for help. This module covers the habits that prevent those problems.
+
+## Our aim and mission [BA]{.ba-tag}
+
+The ELTE Stress and Emotions research group aims to explore the links between heightened physiological states, such as acute physiological stress, and human behavior, cognition, perception, and emotions. Our projects use experimental methods to investigate the effects of physiological arousal in the laboratory and in everyday situations. Through our research, we hope to gain a better understanding of the embodiment of the human mind, which will contribute to the development of our models of consciousness.
+
+::: {.callout-note collapse="true"}
+## Magyarul
+
+Az ELTE Stressz és Érzelmek kutatócsoport célja, hogy feltárja a felfokozott élettani állapotok, mint akut fiziológiai stressz, valamint az emberi viselkedés, kogníció, percepció, és érzelmek közötti összefüggéseket. Projektjeinkben kísérleti módszerek segítségével vizsgáljuk a fiziológiai arousal hatását laboratóriumi és mindennapi helyzetekben. Az elvégzett kutatások hatására azt reméljük, hogy jobban megértjük majd az emberi elme testi beágyazottságát, ami hozzájárulhat a tudatról alkotott modelljeink fejlesztéséhez.
+:::
+
+## Lab meetings [BA]{.ba-tag}
+
+- By default, meetings are held online in Google Meet. In-person meetings are the exception.
+- Meetings are not recorded, but meeting notes are taken and archived.
+- Don't be late. If you will be more than 5 minutes late, say so, preferably in advance.
+- Be respectful and kind to others in meetings, too.
+
+## Deadlines [BA]{.ba-tag}
+
+- Deadlines must be respected.
+- Setting realistic deadlines is hard. Break larger tasks into smaller pieces and estimate the time each subtask needs.
+- If you see that you cannot meet a deadline, **say so in advance**.
+- If you missed a deadline, reset it as soon as possible, proactively. For example: *"I was supposed to finish this task by next Monday, but I see now that next Friday is realistic."*
+
+## Slack communication
+
+We use the [Stress & Emotion workspace]({{< var links.slack >}}) on Slack.
+
+- Use the **project channels** for anything about a project, so everyone stays in the loop.
+- Use direct messages or small closed groups **for personal issues only**.
+- Projects are discussed in closed channels; the lab leader sends the invitations.
+- Use **#general** for professional things, such as articles and podcasts, and **#random** for everything else (and cat gifs).
+- The language is **English** in all channels. In projects where all contributors are Hungarian, Hungarian is fine.
+- Slack membership ends when the collaboration ends.
+
+::: callout-important
+## Slack is not a record
+Messages can be edited or deleted, and history is limited. **Never use Slack as a later reference point.** If a decision or piece of information needs to be remembered, put it in a document or in the ClickUp task.
+:::
+
+## Definition of done
+
+A task is only done when all four of these are true:
+
+1. You completed it according to the task description.
+2. You **verified** that the result is accurate and complete. For example, the numbers are correct, the literature search doesn't miss important papers, the code passes its tests, the files are uploaded, and the documents are shared.
+3. You **communicated** completion in writing (for example, a ClickUp comment), and the output is easy to find.
+4. You marked the task as complete in ClickUp.
+
+## Getting stuck and handling stress
+
+Getting stuck is normal, but staying stuck is frustrating for you and for the others in the project.
+
+- Most often, you just need to talk to someone to get things moving.
+- It helps to summarize the problem to yourself or to someone outside the project ([rubber ducking](https://en.wikipedia.org/wiki/Rubber_duck_debugging)).
+- Search the web and ask a generative AI assistant before asking for human help.
+- **Whenever you feel lost and frustrated about a project, ask for a meeting.**
+- It is better to realize that a task is too much for you than to waste a lot of time and stress out (but don't give up too easily).
+- If your work is hindered by personal problems, you can [talk to a counselor](https://www.ppk.elte.hu/tanacsado) for free.
+
+## Communicating in academia
+
+Academic communication often means formal emails, and you will regularly need letters of recommendation. These two guides cover both:
+
+- [Communicating professionally]({{< var links.communicating >}})
+- [Letter of recommendation guide (for students)]({{< var links.recommendation >}}). In short: you usually approach the person yourself and prepare everything so they can reply quickly.
+
+## Do
+
+These tasks are also in your ClickUp onboarding task.
+
+- [ ] Join the Slack workspace and set a profile photo and your full name.
+- [ ] Introduce yourself in **#general**: who you are, what you study, and what you would like to learn in the lab.
+- [ ] Read the *Communicating professionally* guide.
+
+## Check yourself
+
+::: quiz
+You realize on Wednesday that the analysis due Friday will take until next Tuesday. What should you do?
+
+- [ ] Work over the weekend and hand it in late without mentioning it; it's only a few days.
+- [x] Tell the project lead now, with a realistic new date, and update the deadline in ClickUp.
+- [ ] Wait until Friday, then explain what happened.
+- [ ] Hand in whatever you have on Friday.
+
+::: explain
+Communicate diversions **in advance** and reset the deadline proactively, with a realistic new date. A late surprise costs others more than an early warning.
+:::
+:::
+
+::: quiz
+In a project channel, the team agrees to drop one of the questionnaires. Where should this decision end up?
+
+- [ ] Nowhere else, the Slack thread is enough.
+- [ ] In a direct message to the project lead.
+- [x] In the project's documents or ClickUp task, so it can be found later.
+
+::: explain
+Slack messages can be edited or deleted and history is limited. Anything that must be remembered goes into a document or ClickUp.
+:::
+:::
+
+::: quiz
+Which of these are required before a task counts as done?
+
+- [x] You checked that the result is accurate and complete.
+- [x] You wrote a comment saying it's done, and the output is easy to find.
+- [x] You marked the task as complete in ClickUp.
+- [ ] The lab leader praised the result in a meeting.
+
+::: explain
+The definition of done has four parts: done according to the description, verified, communicated in writing with a findable output, and marked complete.
+:::
+:::
+
+::: quiz
+You want to share a podcast episode about stress physiology that you enjoyed. Where do you post it?
+
+- [ ] #random
+- [x] #general
+- [ ] In a direct message to everyone
+
+::: explain
+#general is for professional content like articles and podcasts. #random is for non-work things.
+:::
+:::
+
+::: quiz
+You've been stuck on a task for three days and feel increasingly frustrated. What's the best next step?
+
+- [ ] Keep trying alone; asking for help looks weak.
+- [ ] Quietly move on to a different task.
+- [x] Ask for a meeting with the project lead or a lab member.
+
+::: explain
+Whenever you feel lost and frustrated about a project, get a meeting. Most of the time, a short conversation gets things moving.
+:::
+:::
+
+## Checkpoint
+
+When you are done with this module, take the [Module 1 checkpoint quiz]({{< var forms.m1 >}}) and tick it off in ClickUp.

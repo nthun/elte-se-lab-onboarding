@@ -1,0 +1,301 @@
+---
+title: "6. Data and R"
+subtitle: "Tidy datasets, analysis skills and our R workflow"
+engine: markdown
+format:
+  live-html:
+    theme:
+      light: [cosmo, ../assets/custom.scss]
+      dark: [darkly, ../assets/custom.scss]
+    toc: true
+    toc-depth: 2
+    include-after-body: ../assets/quiz.html
+    css: ../assets/quiz.css
+webr:
+  packages:
+    - dplyr
+---
+
+::: module-meta
+<span>⏱ ~2 hours</span><span>Track: data sections [BA]{.ba-tag}; R sections for everyone who analyzes data</span><span>Checkpoint: [Module 6 quiz]({{< var forms.m6 >}})</span>
+:::
+
+## Why this matters
+
+Datasets outlive the people who create them. A clean, well-named, anonymized dataset can be reused, shared on OSF and understood by the next student. A messy one becomes a liability. The code exercises on this page run in your browser: there is nothing to install. The first time, R takes a few seconds to load.
+
+## Working with data [BA]{.ba-tag}
+
+- Use Google Sheets whenever possible. Otherwise, prefer `.tsv` or `.csv` to `.xlsx`.
+- Datasets are version controlled and stored in the cloud.
+- Variable names are in **English** and are **both human and computer readable**: `hr_baseline`, not `HR baseline (bpm)!` or `v17`.
+- Every dataset has a **unique ID variable**. IDs mix letters and zero-padded numbers, with no special or accented characters, for example `TS001` or `UI45R7`.
+- Personal identifiers (email, Neptun code, etc.) are anonymized as soon as possible and **never used as IDs** in raw form.
+
+## Data analysis skills [BA]{.ba-tag}
+
+Data analysis is a vast field, and there is always more to learn, so what I look for is the ability to learn new things. That said:
+
+- You must know **(generalized) linear regression** fairly well. It is the foundation everything else builds on.
+- Learn **linear mixed-effects models** (multilevel regression) as soon as possible.
+- My data analysis and statistical inference lectures (in Hungarian) are in this [Google Classroom]({{< var links.classroom >}}). Use them whenever you need to.
+
+## Tools [BA]{.ba-tag}
+
+- I prefer open-source software. I don't work with SPSS. If you can't use R, use [JASP](https://jasp-stats.org/) or [jamovi](https://www.jamovi.org/).
+- [Use R](https://www.r-project.org/). I encourage everyone who decides to learn it and can help with online courses. **If you are my PhD student, you must learn R.**
+- Another language (MATLAB, Python, Julia) is fine, but I may not be able to help with your code.
+
+## Programming in R
+
+- I use R locally with [RStudio](https://posit.co/download/rstudio-desktop/).
+- Use an **R Project** for every project. No standalone scripts.
+- Use the [tidyverse](https://www.tidyverse.org/) and tidy tools whenever possible, because they are readable. Other packages I use often: `easystats` for residual diagnostics and publication-ready tables, and Quarto or `rmarkdown` for reports.
+- Always use [git](https://git-scm.com/) and [GitHub](https://github.com/) for version control. It also makes collaboration, bug reporting and code review easy.
+- Format code according to the [tidyverse style guide](https://style.tidyverse.org/).
+
+## Analysis reports
+
+- Analysis reports are written in Quarto (or R Markdown) and compiled to HTML.
+- Include both explanatory text and code comments.
+- The HTML can be hosted on GitHub Pages ([example]({{< var links.report_example >}})). Otherwise, use the [GitHub HTML preview](https://htmlpreview.github.io/) for HTML files in a repository.
+
+## Practice in R
+
+These exercises use the conventions above. Edit the code, press **Run Code**, then **Submit Answer** to get feedback.
+
+### Exercise 1: Readable variable names [BA]{.ba-tag}
+
+The pilot dataset `raw` has unreadable column names. Rename them to `participant`, `age_years` and `hr_baseline` (in this order).
+
+```{webr}
+#| setup: true
+#| exercise: ex_names
+library(dplyr)
+raw <- data.frame(
+  `Résztvevő` = c("Anna", "Bence", "Csilla"),
+  `Age (years)` = c(21, 23, 22),
+  `HR baseline!` = c(72, 80, 68),
+  check.names = FALSE
+)
+```
+
+```{webr}
+#| exercise: ex_names
+raw |>
+  rename(
+    participant = `Résztvevő`,
+    ______ = `Age (years)`,
+    ______ = ______
+  )
+```
+
+```{webr}
+#| exercise: ex_names
+#| check: true
+if (!is.data.frame(.result)) {
+  list(correct = FALSE, message = "The result should be a data frame. Did the code run without errors?")
+} else if (identical(names(.result), c("participant", "age_years", "hr_baseline"))) {
+  list(correct = TRUE, message = "Nice: English, lowercase, no spaces or special characters.")
+} else {
+  list(correct = FALSE, message = paste("Your column names are:", paste(names(.result), collapse = ", ")))
+}
+```
+
+::: { .hint exercise="ex_names" }
+Inside `rename()`, the new name goes on the left and the old name, in backticks, goes on the right: `new_name = \`Old name\``.
+:::
+
+::: { .solution exercise="ex_names" }
+```r
+raw |>
+  rename(
+    participant = `Résztvevő`,
+    age_years = `Age (years)`,
+    hr_baseline = `HR baseline!`
+  )
+```
+:::
+
+### Exercise 2: Proper ID variables [BA]{.ba-tag}
+
+Add an `id` column with zero-padded IDs in the lab format: `TS001`, `TS002`, and so on, one per row.
+
+```{webr}
+#| setup: true
+#| exercise: ex_ids
+library(dplyr)
+pilot <- data.frame(
+  age_years = c(21, 23, 22, 25, 20),
+  hr_baseline = c(72, 80, 68, 75, 90)
+)
+```
+
+```{webr}
+#| exercise: ex_ids
+pilot |>
+  mutate(id = sprintf(______, row_number()))
+```
+
+```{webr}
+#| exercise: ex_ids
+#| check: true
+target <- sprintf("TS%03d", 1:5)
+if (!is.data.frame(.result) || !"id" %in% names(.result)) {
+  list(correct = FALSE, message = "The result should be a data frame with an `id` column.")
+} else if (identical(as.character(.result$id), target)) {
+  list(correct = TRUE, message = "Correct. Zero padding keeps IDs the same length and makes them sort properly.")
+} else {
+  list(correct = FALSE, message = paste("Your IDs:", paste(.result$id, collapse = ", "), "- expected TS001 ... TS005."))
+}
+```
+
+::: { .hint exercise="ex_ids" }
+`sprintf()` uses a format string. `%03d` means "an integer, padded with zeros to three digits". Put the letters before it: `"TS%03d"`.
+:::
+
+::: { .solution exercise="ex_ids" }
+```r
+pilot |>
+  mutate(id = sprintf("TS%03d", row_number()))
+```
+:::
+
+### Exercise 3: Remove personal identifiers [BA]{.ba-tag}
+
+The dataset `survey` already has a proper `id`, but it still contains participants' `email` and `neptun` columns. Create an anonymized version without them.
+
+```{webr}
+#| setup: true
+#| exercise: ex_anon
+library(dplyr)
+survey <- data.frame(
+  id = c("TS001", "TS002", "TS003"),
+  email = c("a@example.com", "b@example.com", "c@example.com"),
+  neptun = c("ABC123", "DEF456", "GHI789"),
+  stress = c(3, 5, 2)
+)
+```
+
+```{webr}
+#| exercise: ex_anon
+survey |>
+  select(______)
+```
+
+```{webr}
+#| exercise: ex_anon
+#| check: true
+if (!is.data.frame(.result)) {
+  list(correct = FALSE, message = "The result should be a data frame.")
+} else if (any(c("email", "neptun") %in% names(.result))) {
+  list(correct = FALSE, message = "Personal identifiers are still in the data.")
+} else if (!all(c("id", "stress") %in% names(.result))) {
+  list(correct = FALSE, message = "You removed too much: keep `id` and `stress`.")
+} else {
+  list(correct = TRUE, message = "Correct. Only this anonymized version may ever be shared or published.")
+}
+```
+
+::: { .hint exercise="ex_anon" }
+In `select()`, a minus sign drops a column: `select(-column_name)`.
+:::
+
+::: { .solution exercise="ex_anon" }
+```r
+survey |>
+  select(-email, -neptun)
+```
+:::
+
+### Exercise 4: A first regression
+
+Fit a linear regression predicting `stress` from `caffeine_mg` in the `study` data, and return the slope (the coefficient of `caffeine_mg`).
+
+```{webr}
+#| setup: true
+#| exercise: ex_lm
+set.seed(42)
+study <- data.frame(caffeine_mg = round(runif(40, 0, 300)))
+study$stress <- round(2 + 0.01 * study$caffeine_mg + rnorm(40, 0, 0.8), 1)
+```
+
+```{webr}
+#| exercise: ex_lm
+fit <- lm(______ ~ ______, data = study)
+coef(fit)[______]
+```
+
+```{webr}
+#| exercise: ex_lm
+#| check: true
+target <- unname(coef(lm(stress ~ caffeine_mg, data = study))["caffeine_mg"])
+if (is.numeric(.result) && length(.result) == 1 && isTRUE(all.equal(unname(.result), target))) {
+  list(correct = TRUE, message = sprintf("Correct: stress increases by about %.3f points per mg of caffeine. Per 100 mg, that's %.2f points.", target, 100 * target))
+} else {
+  list(correct = FALSE, message = "Not yet. The outcome goes on the left of `~`, and you want the single coefficient named \"caffeine_mg\".")
+}
+```
+
+::: { .hint exercise="ex_lm" }
+The formula is `outcome ~ predictor`. Coefficients can be selected by name: `coef(fit)["caffeine_mg"]`.
+:::
+
+::: { .solution exercise="ex_lm" }
+```r
+fit <- lm(stress ~ caffeine_mg, data = study)
+coef(fit)["caffeine_mg"]
+```
+:::
+
+## Do
+
+These tasks are also in your ClickUp onboarding task. BA students only need the first one.
+
+- [ ] Complete the four exercises above.
+- [ ] Install R, RStudio and git, and create a GitHub account. Send your GitHub username to the lab leader.
+- [ ] Create an R Project with git enabled, write a short Quarto report (any small dataset), render it to HTML, and push it to a GitHub repository. Link the repository in ClickUp.
+
+## Check yourself
+
+::: quiz
+Which of these is a good ID for a participant?
+
+- [ ] `kovács.anna@gmail.com`
+- [ ] `ÁB 7`
+- [x] `TS007`
+- [ ] `7`
+
+::: explain
+IDs mix letters and zero-padded numbers, with no special or accented characters, and they must never be personal identifiers.
+:::
+:::
+
+::: quiz
+Which variable name follows the lab's conventions?
+
+- [ ] `Szívfrekvencia nyugalomban`
+- [ ] `HR (bpm) - baseline!`
+- [x] `hr_baseline`
+- [ ] `var17`
+
+::: explain
+English, human-readable and computer-readable: lowercase, no spaces or special characters, and descriptive.
+:::
+:::
+
+::: quiz
+You need a quick analysis for your project. Which setup fits the lab's workflow?
+
+- [ ] An SPSS syntax file on your laptop.
+- [ ] A standalone `analysis.R` script emailed to the supervisor.
+- [x] An R Project under git, with a Quarto report pushed to GitHub.
+
+::: explain
+Every project gets an R Project, code is version controlled with git and GitHub, and reports are written in Quarto and compiled to HTML.
+:::
+:::
+
+## Checkpoint
+
+Take the [Module 6 checkpoint quiz]({{< var forms.m6 >}}).

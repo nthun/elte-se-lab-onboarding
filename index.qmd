@@ -1,0 +1,52 @@
+---
+title: "Welcome to the Stress and Emotions Lab"
+subtitle: "Onboarding course for new lab members"
+toc: true
+---
+
+## What this course is
+
+This course replaces our old onboarding slide deck. It tells you what to expect when you work with us, which tools and skills you need, and how we collaborate. Instead of just reading, you will **do** things along the way: set up your accounts, practice the rules on realistic situations, and check your understanding with short quizzes.
+
+The course is in constant development. If something is outdated, unclear or broken, tell us on Slack. That is a useful contribution, not a complaint.
+
+## How it works
+
+Each module has the same four parts:
+
+| Part | What you do |
+|---|---|
+| **Read** | The lab's rules and practices, with links to tools and tutorials. Follow the links for anything you don't know yet. |
+| **Do** | Practical tasks, such as joining Slack or setting up Zotero. These also appear in your personal onboarding task in ClickUp, where you tick them off. |
+| **Check yourself** | Short self-check questions on the page. They are not graded; they show you what to reread. |
+| **Checkpoint** | A short graded quiz (Google Form) at the end of the module. We use it to see that you are ready for the next step. |
+
+Your onboarding is complete when every subtask in your ClickUp onboarding task is done and every checkpoint you need is passed. The [Checkpoints](modules/progress.qmd) page collects all quiz links.
+
+## Which modules do I need?
+
+Everyone should go through the whole course at least once, even if some parts are not relevant to you yet. Later, when you start a new research phase or meet a new tool, come back to the relevant module and check the exact procedure.
+
+If you are a **BA student doing fieldwork**, the sections marked [BA]{.ba-tag} are the ones you need to know in detail. In practice, that means modules 1–5 in full, plus the data sections of module 6.
+
+| Module | Topic | Time | BA track |
+|---|---|---|---|
+| 1 | [Lab culture](modules/01-lab-culture.qmd) | ~45 min | Required |
+| 2 | [Tools setup](modules/02-tools-setup.qmd) | ~1.5 h | Required |
+| 3 | [Ethics, privacy and data security](modules/03-ethics-privacy.qmd) | ~45 min | Required |
+| 4 | [Running a study](modules/04-running-a-study.qmd) | ~1 h | Required |
+| 5 | [Writing](modules/05-writing.qmd) | ~1.5 h + course | Required |
+| 6 | [Data and R](modules/06-data-and-r.qmd) | ~2 h | Data sections |
+| 7 | [Publishing](modules/07-publishing.qmd) | ~30 min | Optional |
+
+## The short version
+
+If you remember nothing else, remember this:
+
+- Be open to learning new things, and improve your academic writing and public speaking.
+- Use online documents only: Google Docs, Sheets and Slides.
+- Use headings and a reference manager in every document.
+- If you are stuck, search and ask generative AI before asking for human help, but don't stay stuck for long.
+- Keep deadlines and don't be late for meetings. If you will be, say so in advance.
+- Be mindful of data privacy and research ethics.
+- Always be respectful with other lab members and participants.

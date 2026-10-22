@@ -1,0 +1,125 @@
+---
+title: "5. Writing"
+subtitle: "Manuscripts, formatting, references, AI and version control"
+---
+
+::: module-meta
+<span>⏱ ~1.5 hours, plus an online course</span><span>Track: everyone [BA]{.ba-tag}</span><span>Checkpoint: [Module 5 quiz]({{< var forms.m5 >}})</span>
+:::
+
+## Why this matters
+
+Writing is the main product of research. Academic writing has many rules, but the good news is that they can be learned. Consistent tools and formatting also mean that several people can work on the same manuscript without breaking it.
+
+## Learning to write
+
+Unfortunately, ELTE PPK doesn't offer an academic writing course, but there are great free online courses. I recommend [Writing in the Sciences (Coursera)](https://www.coursera.org/learn/sciwrite). Do yourself a favor and complete it.
+
+For building a steady writing habit, read [Silvia (2007): How to write a lot]({{< var links.silvia >}}).
+
+## Word processing [BA]{.ba-tag}
+
+- We work in **Google Docs**, even when the final file needs to be a .docx.
+- Start every document from the [lab template]({{< var links.doc_template >}}).
+- We write in **English (US)**, with rare exceptions. All suggestions and comments are in English, too.
+- **Always use [headings](https://www.youtube.com/watch?v=U3pfqa2GsuA).**
+- Use Grammarly or another writing tool for spell checking.
+- I use [suggestions](https://edu.gcfglobal.org/en/googledocuments/using-suggestion-mode-to-track-changes/1/) and comments a lot. Don't be offended if you see many changes in your text. Iteration and rewriting make a great manuscript.
+
+## Formatting [BA]{.ba-tag}
+
+- The default style for text, figures, tables and statistical results is **APA 7**.
+- Use headings. This also gives you an automatic outline in the Google Docs sidebar.
+- **No manual font changes** (type, size, bold for headings, etc.). Formatting is handled by the template and its styles.
+- Include tables as real tables, not as images.
+- Include figures as images with readable legends.
+- Place tables and figures in the text, not at the end of the document.
+
+## File names and version control [BA]{.ba-tag}
+
+- **One document, one file.** No file names like `thesis210210_final_ver2.docx`.
+- A good file name identifies the topic, isn't vague, and has no characters that confuse operating systems. A good example: *Tactile sensitivity and arousal manuscript*.
+- [Version control](https://www.youtube.com/watch?v=X2W1dUM3bu8) stores all previous versions of a document while you only see the latest. Google Drive and OSF do this automatically.
+- In Google Docs, use [named versions](https://www.youtube.com/watch?v=Won2dVZGBE0) for milestones, such as "Sent to co-authors" or "Submitted".
+- For code, we use git and GitHub (module 6).
+
+## References [BA]{.ba-tag}
+
+Use a reference manager in every document (you set one up in module 2). I don't have a strong preference for citation style, since it changes with one click, but the field standard is APA.
+
+## Plagiarism [BA]{.ba-tag}
+
+- Any form of plagiarism is forbidden, including self-plagiarism and close paraphrasing.
+- Plagiarism is usually avoidable with proper referencing.
+- If you use an idea you borrowed from someone else, even in a research meeting, name the original source.
+- Use direct quotes only for definitions or idioms, and avoid long verbatim passages.
+- ELTE has a [Turnitin](https://www.turnitin.com/) licence that we can use if necessary.
+
+## Generative AI [BA]{.ba-tag}
+
+- Generative AI can be a great productivity tool for rephrasing sentences, drafting an abstract or translating a document.
+- Feel free to use it, but do it responsibly. Follow the Faculty's [guideline on AI-generated content](https://ppk.elte.hu/en/documents/artificial-intelligence).
+- LLMs still struggle with some tasks that are central to academic work, which makes AI-generated content fairly easy to spot.
+- Never use AI output blindly. Always double-check it, especially references, numbers and claims about the literature.
+- Useful tools: general assistants such as [ChatGPT](https://chatgpt.com/), [Claude](https://claude.ai/) or [Gemini](https://gemini.google.com/) for text and code; [DeepL](https://www.deepl.com/) for translation; [GitHub Copilot](https://github.com/features/copilot) for code.
+
+## Do
+
+These tasks are also in your ClickUp onboarding task.
+
+- [ ] Enroll in *Writing in the Sciences* on Coursera, and finish at least the first two units.
+- [ ] Formatting exercise: make a copy of the lab template, then rewrite a one-page text (for example, your fieldwork plan or an essay) in it. Use only heading styles and the template's formatting, insert two citations with your reference manager, add a bibliography, and save a named version called *"Onboarding exercise"*. Share it with the lab leader and link it in ClickUp.
+
+## Check yourself
+
+::: quiz
+You want a section title to stand out. What's the right way to do that in a lab document?
+
+- [ ] Make the text bold and 14 pt.
+- [x] Apply the appropriate heading style (Heading 1, 2, …).
+- [ ] Put it in capital letters and underline it.
+
+::: explain
+No manual font changes: the template's heading styles handle the look, and they also generate the document outline and table of contents.
+:::
+:::
+
+::: quiz
+You've finished a draft and want to keep a copy before co-authors start editing. What do you do?
+
+- [ ] Make a copy named "manuscript_v2_final".
+- [ ] Download it as a .docx and keep it locally.
+- [x] Create a named version in Google Docs version history (for example, "Sent to co-authors").
+
+::: explain
+One document, one file. Version history keeps every previous state without creating duplicate files that can get mixed up.
+:::
+:::
+
+::: quiz
+An AI assistant drafts a paragraph for your introduction, including three references. What should you do before using it?
+
+- [ ] Nothing; the references look properly formatted.
+- [x] Check every claim and confirm each reference exists and says what's claimed, then add them through your reference manager.
+- [ ] Only check the grammar.
+
+::: explain
+Never use AI output blindly. Generated references are often inaccurate or entirely made up, and citations must go through the reference manager anyway.
+:::
+:::
+
+::: quiz
+In a lab meeting, a colleague suggests a clever manipulation check. You'd like to use it in your study. What's appropriate?
+
+- [ ] Use it; ideas from meetings are shared property.
+- [x] Use it and acknowledge that the idea came from your colleague.
+- [ ] Rephrase it a bit so it becomes your own idea.
+
+::: explain
+If you use an idea borrowed from someone else, even from a research meeting, let others know the original source.
+:::
+:::
+
+## Checkpoint
+
+Take the [Module 5 checkpoint quiz]({{< var forms.m5 >}}).

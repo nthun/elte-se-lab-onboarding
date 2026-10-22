@@ -1,0 +1,21 @@
+# Edit links here once; every module picks them up via {{< var ... >}}.
+# Replace each REPLACE-ME with the "Send > link" URL of the matching Google Form (quiz mode).
+forms:
+  m1: "https://forms.gle/REPLACE-ME-module-1"
+  m2: "https://forms.gle/REPLACE-ME-module-2"
+  m3: "https://forms.gle/REPLACE-ME-module-3"
+  m4: "https://forms.gle/REPLACE-ME-module-4"
+  m5: "https://forms.gle/REPLACE-ME-module-5"
+  m6: "https://forms.gle/REPLACE-ME-module-6"
+  m7: "https://forms.gle/REPLACE-ME-module-7"
+
+links:
+  slack: "https://stress-emotion-lab.slack.com/"
+  clickup: "https://app.clickup.com/"
+  lab_email: "stress.and.emotions.lab@gmail.com"
+  doc_template: "https://docs.google.com/document/d/1SXWepTl7-n6t3HNU_ple-9NcmFERDPZGCqnyaULmvvo"
+  communicating: "https://docs.google.com/document/d/18O1c2afDuhcbnGOVZydfV9qy1ZYTbpTGkd32UefvHQ0/edit"
+  recommendation: "https://docs.google.com/document/d/1gUJyGdJNKnIu2WTm1bD2yyOZOLDo6RWkm4PZvhvsBHE/edit"
+  silvia: "https://drive.google.com/file/d/1IvObP9sEztG-qEu_y7zdYXjVZ9NebS1X/view"
+  classroom: "https://classroom.google.com/c/MjA4NTE2MjEzNjMx?cjc=u3p2y2l"
+  report_example: "https://nthun.github.io/performance_sleep_quality/"

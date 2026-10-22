@@ -1,0 +1,26 @@
+---
+title: "Checkpoints"
+subtitle: "Graded quizzes and how your onboarding is tracked"
+---
+
+## How completion works
+
+Your onboarding is tracked in a personal ClickUp task called **Onboarding – your name**. It has one subtask for each module, and each subtask has a checklist of the module's **Do** items and its checkpoint quiz.
+
+1. Work through a module and tick off its checklist items as you complete them.
+2. Take the module's checkpoint quiz below. You pass with **80%** and can retake a quiz as many times as you like.
+3. When everything in a module is done, mark its subtask as complete and leave a short comment with links to anything you produced.
+
+Onboarding is finished when every module you need is complete. For the BA track, that's modules 1–5 and the data exercises in module 6.
+
+## Checkpoint quizzes
+
+| Module | Checkpoint |
+|---|---|
+| 1. Lab culture | [Module 1 quiz]({{< var forms.m1 >}}) |
+| 2. Tools setup | [Module 2 quiz]({{< var forms.m2 >}}) |
+| 3. Ethics, privacy and data security | [Module 3 quiz]({{< var forms.m3 >}}). Pass it before you take part in any data collection. |
+| 4. Running a study | [Module 4 quiz]({{< var forms.m4 >}}) |
+| 5. Writing | [Module 5 quiz]({{< var forms.m5 >}}) |
+| 6. Data and R | [Module 6 quiz]({{< var forms.m6 >}}) |
+| 7. Publishing | [Module 7 quiz]({{< var forms.m7 >}}) |

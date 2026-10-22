@@ -1,0 +1,46 @@
+project:
+  type: website
+  output-dir: _site
+
+website:
+  title: "S&E Lab Onboarding"
+  description: "Onboarding course for new members of the ELTE Stress and Emotions Lab"
+  page-navigation: true
+  search: true
+  navbar:
+    left:
+      - href: index.qmd
+        text: Start here
+      - href: modules/progress.qmd
+        text: Checkpoints
+    right:
+      - icon: slack
+        href: https://stress-emotion-lab.slack.com/
+        aria-label: Lab Slack
+  sidebar:
+    style: docked
+    contents:
+      - index.qmd
+      - section: "Modules"
+        contents:
+          - modules/01-lab-culture.qmd
+          - modules/02-tools-setup.qmd
+          - modules/03-ethics-privacy.qmd
+          - modules/04-running-a-study.qmd
+          - modules/05-writing.qmd
+          - modules/06-data-and-r.qmd
+          - modules/07-publishing.qmd
+      - modules/progress.qmd
+  page-footer:
+    left: "ELTE Stress and Emotions Lab"
+    right: "This course is in constant development. Spotted a problem? Tell us on Slack."
+
+format:
+  html:
+    theme:
+      light: [cosmo, assets/custom.scss]
+      dark: [darkly, assets/custom.scss]
+    toc: true
+    toc-depth: 2
+    include-after-body: assets/quiz.html
+    css: assets/quiz.css

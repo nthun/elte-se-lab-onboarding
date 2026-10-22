@@ -1,0 +1,136 @@
+---
+title: "4. Running a study"
+subtitle: "From idea to archived project, and how to behave in the lab"
+---
+
+::: module-meta
+<span>⏱ ~1 hour</span><span>Track: everyone [BA]{.ba-tag}</span><span>Checkpoint: [Module 4 quiz]({{< var forms.m4 >}})</span>
+:::
+
+## Why this matters
+
+A study is a long chain of steps, and every step leaves documents behind. If those documents are complete and in the right place, anyone can pick up the project, reviewers can check our work, and we can reuse the materials years later.
+
+## Stages of research
+
+1. An idea that is worth pursuing.
+2. Collecting previous results and knowledge on the subject.
+3. Setting up a research project in ClickUp, if the project seems worthwhile.
+4. Creating and iterating a preliminary research plan.
+5. Creating research materials (stimuli, questionnaires, experiment scripts) and running pilot tests.
+6. Acquiring equipment, licences and incentives.
+7. Submitting an ethics application (only the head of the lab can do this).
+8. Submitting a [pre-registration](https://www.cos.io/initiatives/prereg) on OSF.
+9. Collecting data.
+10. Preprocessing data.
+11. Analyzing data.
+12. Preparing the manuscript and other scientific communications.
+13. Submitting the manuscript and uploading a preprint.
+14. Publishing the article, and the OSF repository with all materials and data.
+15. Closing and archiving the project.
+
+## Study documents
+
+Every study has:
+
+- **Meeting notes** for its meetings.
+- A separate **OSF repository** that contains *all* files important for the project. The Google Drive folder contains some of them.
+- A **GitHub repository** for the analysis code if it is written in R, embedded in the OSF project.
+- The **ethics application and permission** documents.
+- A **pre-registration**, for every study that involves data collection.
+
+In-person lab studies also need:
+
+- A **research protocol** that describes the procedure in every detail.
+- A **lab log** that records every session and every event.
+
+## Transparency
+
+We make every study as transparent as possible: we pre-register, make data, analysis code and materials public, and publish in open access journals. Data must be published on [OSF](https://osf.io/) and/or [GitHub](https://github.com/) for every project, except when the data was collected by someone else.
+
+## Data collection [BA]{.ba-tag}
+
+- Data collection only happens with supervision, and only with ethics permission.
+- Lab sessions are booked through [youcanbook.me](https://youcanbook.me/).
+- Online questionnaires usually run on [Qualtrics](https://www.qualtrics.com/) or [Google Forms](https://www.google.com/forms).
+- Experiments run on whichever platform suits the project, such as lab.js, PsyToolkit or OpenSesame.
+- Some online experiments and media files run on the lab's own cloud server. Your project supervisor will give you access and instructions if your project uses it.
+
+## Interacting with participants [BA]{.ba-tag}
+
+- Always follow the instructions of the project supervisor and the research protocol.
+- Always respect participants. Without them, we would have no data.
+- Record **every irregular event** in the project's lab log.
+
+## Lab devices and materials [BA]{.ba-tag}
+
+- Handle lab equipment, especially electronic devices, with care and leave it in good condition.
+- In case of malfunction or an accident, report it to the project supervisor and the lab leader **immediately**.
+- Always clean equipment that a participant used, for example earphones.
+- Always tidy up the lab before leaving.
+
+## Do
+
+These tasks are also in your ClickUp onboarding task.
+
+- [ ] Open the OSF page of one published lab project and find its pre-registration, data and analysis code.
+- [ ] Write a practice lab log entry for this situation and post it as a comment on your ClickUp onboarding task:
+
+  > *Session 14 starts 20 minutes late because the previous participant didn't show up and the current one arrived early and waited in the corridor. During the session, the heart rate sensor disconnects once for about a minute; you reattach it and continue.*
+
+  A good entry has the date, session and participant ID (never a name), what happened, when, and what you did.
+
+## Check yourself
+
+::: quiz
+During a session, a participant feels dizzy and you pause the task for five minutes. The session then continues normally. What do you do?
+
+- [ ] Nothing, since the session was completed.
+- [ ] Mention it to the supervisor next week if you remember.
+- [x] Record it in the lab log with the time, what happened and what you did, and tell the supervisor.
+
+::: explain
+All irregular events go into the lab log. Something that seems minor during the session can matter a lot when interpreting the data later.
+:::
+:::
+
+::: quiz
+The headphones stop working in the middle of your shift. What's the right response?
+
+- [ ] Try to fix them at home over the weekend.
+- [x] Report it to the project supervisor and the lab leader as soon as possible.
+- [ ] Put them back and leave a note for the next RA.
+
+::: explain
+Malfunctions and accidents are reported to both the project supervisor and the lab leader immediately, so sessions can be rescheduled and equipment replaced.
+:::
+:::
+
+::: quiz
+Which of these must an in-person lab study have? Select all that apply.
+
+- [x] A detailed research protocol
+- [x] A lab log
+- [x] A pre-registration
+- [ ] A press release
+
+::: explain
+In-person studies need a protocol and a lab log on top of the usual documents, and every study with data collection needs a pre-registration.
+:::
+:::
+
+::: quiz
+When is the pre-registration submitted?
+
+- [ ] After data collection, together with the analysis.
+- [x] Before data collection starts, after the ethics application.
+- [ ] Only if a journal asks for it.
+
+::: explain
+In our sequence, pre-registration comes after the ethics application and before data collection. Pre-registering after seeing the data defeats its purpose.
+:::
+:::
+
+## Checkpoint
+
+Take the [Module 4 checkpoint quiz]({{< var forms.m4 >}}).
