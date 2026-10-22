@@ -1,13 +1,13 @@
 # Edit links here once; every module picks them up via {{< var ... >}}.
 # Replace each REPLACE-ME with the "Send > link" URL of the matching Google Form (quiz mode).
 forms:
-  m1: "https://forms.gle/REPLACE-ME-module-1"
-  m2: "https://forms.gle/REPLACE-ME-module-2"
-  m3: "https://forms.gle/REPLACE-ME-module-3"
-  m4: "https://forms.gle/REPLACE-ME-module-4"
-  m5: "https://forms.gle/REPLACE-ME-module-5"
-  m6: "https://forms.gle/REPLACE-ME-module-6"
-  m7: "https://forms.gle/REPLACE-ME-module-7"
+  m1: "https://forms.gle/MM6LwstfyQfJyyc28"
+  m2: "https://forms.gle/VEHCRBM2LEX4w67M8"
+  m3: "https://forms.gle/1YfndYcJXi8jZoDT8"
+  m4: "https://forms.gle/fK6RM5AS3Ju2B1zZA"
+  m5: "https://forms.gle/y7zPTGHnPJd83yKr9"
+  m6: "https://forms.gle/XGpgQpWFkHKf2DrV6"
+  m7: "https://forms.gle/zivJT1hX4fuznL9g7"
 
 links:
   slack: "https://stress-emotion-lab.slack.com/"
