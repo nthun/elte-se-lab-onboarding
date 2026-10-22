@@ -44,11 +44,11 @@ If you are a **BA student doing fieldwork**, the sections marked [BA]{.ba-tag} a
 If you remember nothing else, remember this:
 
 - Be open to learning new things, and improve your academic writing and public speaking.
-- Come to the bi-weekly lab meetings and weekly co-working sessions.
+- Come to the bi-weekly lab meetings (online) and the weekly co-working sessions (in person, room 521, Izabella utca building).
 - Use AI tools freely, but check their output and never give them participant data.
 - Use online documents only: Google Docs, Sheets and Slides.
 - Use headings and a reference manager in every document.
 - If you are stuck, search and ask generative AI before asking for human help, but don't stay stuck for long.
-- Keep deadlines and don't be late for meetings. If you will be, say so in advance.
+- Keep deadlines and don't be late for meetings. RSVP to every calendar invite at least 2 days in advance.
 - Be mindful of data privacy and research ethics.
 - Always be respectful with other lab members and participants.

@@ -27,7 +27,7 @@ We **don't use local files**, such as an Excel sheet saved on one specific compu
 ## Communication and scheduling [BA]{.ba-tag}
 
 - We communicate on [Slack]({{< var links.slack >}}). Rarely, when outside parties are involved, we use MS Teams.
-- Meetings and task deadlines are scheduled in [Google Calendar](https://calendar.google.com/).
+- Meetings and task deadlines are scheduled in [Google Calendar](https://calendar.google.com/). **RSVP to every invite (accept or decline) at least 2 days in advance.**
 - Meetings are online in [Google Meet](https://meet.google.com/) by default.
 - To find a time for a group meeting, we use [When2meet](https://www.when2meet.com/). You can import your availability from Google Calendar instead of clicking it in by hand.
 - For external communication, the lab has a shared email address: {{< var links.lab_email >}}.

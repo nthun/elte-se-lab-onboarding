@@ -96,6 +96,7 @@ We make every study as transparent as possible: we pre-register, make data, anal
 
 ## Lab rooms, devices and materials [BA]{.ba-tag}
 
+- The lab is room 521 in the Izabella utca building. Lab sessions usually run in rooms 402 and 422 on the 4th floor; your supervisor will tell you which one your study uses.
 - To pick up the key card and keys for the lab rooms from the reception on your own, you need a signed authorization. Fill in your name in the [authorization template]({{< var links.tpl_authorization >}}) and ask the lab leader to sign it.
 - Handle lab equipment, especially electronic devices, with care and leave it in good condition.
 - In case of malfunction or an accident, report it to the project supervisor and the lab leader **immediately**.

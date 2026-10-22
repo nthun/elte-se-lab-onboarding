@@ -23,6 +23,10 @@ The ELTE Stress and Emotions research group aims to explore the links between he
 Az ELTE Stressz és Érzelmek kutatócsoport célja, hogy feltárja a felfokozott élettani állapotok, mint akut fiziológiai stressz, valamint az emberi viselkedés, kogníció, percepció, és érzelmek közötti összefüggéseket. Projektjeinkben kísérleti módszerek segítségével vizsgáljuk a fiziológiai arousal hatását laboratóriumi és mindennapi helyzetekben. Az elvégzett kutatások hatására azt reméljük, hogy jobban megértjük majd az emberi elme testi beágyazottságát, ami hozzájárulhat a tudatról alkotott modelljeink fejlesztéséhez.
 :::
 
+## Where we are [BA]{.ba-tag}
+
+The lab is in **room 521** of ELTE PPK's **Izabella utca building** (1064 Budapest, Izabella utca 46). This is where the co-working sessions happen, and where you can find lab members during the week.
+
 ## Your mentor [BA]{.ba-tag}
 
 Every newcomer gets a **mentor**: an experienced lab member who helps you settle in. Your mentor is your first contact for practical questions ("where is this file?", "how do we usually do that?"), can review your first tasks, and joins you for your first lab sessions. You'll get their name when you join; meet them in your first week.
@@ -32,10 +36,12 @@ Every newcomer gets a **mentor**: an experienced lab member who helps you settle
 | What | How often | Where |
 |---|---|---|
 | Lab meeting | Every two weeks | Online, Google Meet |
-| Co-working session | Every week | Online, Google Meet |
+| Co-working session | Every week | In person, room 521 |
 | Social event | At least once a semester | In person |
 
-Lab meetings and co-working sessions are **mandatory by default**. If you can't attend one, let us know in advance. Co-working sessions are for getting real work done together: bring a task, say what you plan to finish, and ask for help when you get stuck. The social events are optional, but please come; they're the best way to get to know the people you work with.
+Lab meetings and co-working sessions are **mandatory by default**. If you can't attend one, let us know in advance.
+
+**RSVP to every Google Calendar invite at least 2 days in advance**: lab meetings, co-working sessions, social events and any other meeting. Accept or decline the invite whether you are coming or not, so we know who to expect. Co-working sessions are for getting real work done together: bring a task, say what you plan to finish, and ask for help when you get stuck. The social events are optional, but please come; they're the best way to get to know the people you work with.
 
 ## Lab meetings [BA]{.ba-tag}
 
@@ -148,11 +154,12 @@ The definition of done has four parts: done according to the description, verifi
 You have an exam the day of the weekly co-working session. What do you do?
 
 - [ ] Nothing; co-working is optional.
-- [x] Let the team know in advance that you'll miss this one.
+- [x] Decline the invite at least 2 days before the session.
+- [ ] Decline on the morning of the session.
 - [ ] Join late without saying anything.
 
 ::: explain
-Lab meetings and co-working sessions are mandatory by default. Missing one is fine with a good reason, as long as you tell us in advance.
+Lab meetings and co-working sessions are mandatory by default. Missing one is fine with a good reason, but you must RSVP to every calendar invite at least 2 days in advance.
 :::
 :::
 
